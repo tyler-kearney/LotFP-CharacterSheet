@@ -1,0 +1,63 @@
+<Window
+    Title="LotFP_CharacterSheet"
+    d:DesignHeight="600"
+    d:DesignWidth="800"
+    mc:Ignorable="d"
+    x:Class="LotFP_CharacterSheet.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="0" Text="Name: " />
+
+        <TextBox Grid.Column="1" Text="{Binding CharacterName}" />
+
+        <TextBlock
+            Grid.Column="0"
+            Margin="0,10,0,0"
+            Text="Player: " />
+        <TextBox Grid.Column="1" Text="{Binding PlayerName}" />
+
+        <TextBlock
+            Grid.Column="0"
+            Margin="0,10,0,0"
+            Text="Class: " />
+        <ComboBox Grid.Column="1" ItemsSource="{Binding AvailableClasses}" />
+
+        <TextBlock
+            Grid.Column="0"
+            Margin="0,10,0,0"
+            Text="Level: " />
+        <TextBox Grid.Column="1" Text="{Binding Level}" />
+
+        <TextBox
+            Grid.Column="0"
+            Margin="0,10,0,0"
+            Text="Alignment: " />
+        <ComboBox Grid.Column="1" ItemsSource="{Binding Alignments}" />
+
+        <TextBlock
+            Grid.Column="0"
+            Margin="0,10,0,0"
+            Text="Age: " />
+        <TextBox Grid.Column="1" Text="{Binding Age}" />
+
+        <TextBlock
+            Grid.Column="0"
+            Margin="0,10,0,0"
+            Text="Current XP" />
+        <TextBox Grid.Column="1" Text="{Binding CurrentXP}" />
+
+        <TextBlock
+            Grid.Column="0"
+            Margin="0,10,0,0"
+            Text="XP for Next Level" />
+        <TextBox Grid.Column="1" Text="{Binding XpForNextLevel}" />
+    </Grid>
+</Window>
