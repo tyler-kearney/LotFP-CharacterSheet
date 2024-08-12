@@ -5,6 +5,12 @@ namespace LotFP_CharacterSheet;
 
 public partial class MainWindow : Window
 {
+    public MainWindow()
+    {
+        InitializeComponent();
+        DataContext = this; // This is what allows data bindings to work
+    }
+
     public string CharacterName { get; set; }
     public string PlayerName { get; set; }
     public string SelectedClass { get; set; }
@@ -14,7 +20,7 @@ public partial class MainWindow : Window
     public int CurrentXp { get; set; }
     public int XpForNextLevel { get; set; }
 
-    public ObservableCollection<string> AvailableClasses { get; } = new ObservableCollection<string>()
+    public ObservableCollection<string> AvailableClasses { get; } = new()
     {
         "Cleric",
         "Fighter",
@@ -25,16 +31,10 @@ public partial class MainWindow : Window
         "Halfling"
     };
 
-    public ObservableCollection<string> Alignments { get; } = new ObservableCollection<string>()
+    public ObservableCollection<string> Alignments { get; } = new()
     {
         "Lawful",
         "Neutral",
         "Chaotic"
     };
-    
-    public MainWindow()
-    {
-        InitializeComponent();
-        DataContext = this; // This is what allows data binding to work.
-    }
 }
