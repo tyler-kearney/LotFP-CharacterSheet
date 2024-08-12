@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="LotFP-CharacterSheet/._MainWindow.axaml" value="LotFP-CharacterSheet/LotFP-CharacterSheet.csproj" />
+        <entry key="LotFP-CharacterSheet/App.axaml" value="LotFP-CharacterSheet/LotFP-CharacterSheet.csproj" />
+        <entry key="LotFP-CharacterSheet/MainWindow.axaml" value="LotFP-CharacterSheet/LotFP-CharacterSheet.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
