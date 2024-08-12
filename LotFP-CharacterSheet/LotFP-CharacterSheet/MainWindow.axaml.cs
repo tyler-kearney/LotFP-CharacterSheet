@@ -11,14 +11,14 @@ public partial class MainWindow : Window
         DataContext = this; // This is what allows data bindings to work
     }
 
-    public string CharacterName { get; set; }
-    public string PlayerName { get; set; }
-    public string SelectedClass { get; set; }
-    public int Level { get; set; }
-    public string Alignment { get; set; }
-    public int Age { get; set; }
-    public int CurrentXp { get; set; }
-    public int XpForNextLevel { get; set; }
+    public string CharacterName { get; set; } = "Character Name";
+    public string PlayerName { get; set; } = "Player Name";
+    public string SelectedClass { get; set; } = "Cleric"; // Placeholder can be changed by the combobox
+    public int Level { get; set; } = 1;
+    public string Alignment { get; set; } = "Neutral"; // See above
+    public int Age { get; set; } = 0;
+    public int CurrentXp { get; set; } = 0;
+    public int XpForNextLevel { get; set; } = 0;
 
     public ObservableCollection<string> AvailableClasses { get; } = new()
     {
