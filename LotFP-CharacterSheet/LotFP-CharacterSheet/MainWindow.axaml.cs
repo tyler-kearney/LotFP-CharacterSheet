@@ -17,6 +17,7 @@ public partial class MainWindow : Window
     public int Level { get; set; } = 1;
     public string Alignment { get; set; } = "Neutral"; // See above
     public int Age { get; set; } = 0;
+    public string Sex { get; set; } = "undefined";
     public int CurrentXp { get; set; } = 0;
     public int XpForNextLevel { get; set; } = 0;
 
