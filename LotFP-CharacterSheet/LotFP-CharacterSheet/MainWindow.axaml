@@ -123,5 +123,35 @@
             Grid.Column="7"
             Grid.Row="2"
             Text="{Binding XpForNextLevel}" />
+
+        <!--  Start of the ability section  -->
+        <StackPanel
+            Grid.Column="0"
+            Grid.Row="3"
+            VerticalAlignment="Center">
+            <TextBlock Text="Strength" />
+            <TextBlock Text="Dexterity" />
+            <TextBlock Text="Constitution" />
+            <TextBlock Text="Intelligence" />
+            <TextBlock Text="Wisdom" />
+            <TextBlock Text="Charisma" />
+        </StackPanel>
+        <Button
+            Click="OnClick"
+            Grid.Column="0"
+            Grid.Row="4">
+            Roll Abilities
+        </Button>
+        <StackPanel
+            Grid.Column="1"
+            Grid.Row="3"
+            VerticalAlignment="Center">
+            <TextBox Text="{Binding StrengthScore}" />
+            <TextBox Text="{Binding DexterityScore}" />
+            <TextBox Text="{Binding ConstitutionScore}" />
+            <TextBox Text="{Binding IntelligenceScore}" />
+            <TextBox Text="{Binding WisdomScore}" />
+            <TextBox Text="{Binding CharismaScore}" />
+        </StackPanel>
     </Grid>
 </Window>
